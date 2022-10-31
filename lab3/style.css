@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(0, 255, 200);
+    height: 150px;
+}
+h1 {
+    color: red;
+}
+footer {
+    background:peru;
+    height: 100px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+
+}
+main {
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.readtext {
+    width: 500px;
+}
+
+.count {
+    align-self: baseline;
+    background: rgb(82, 146, 230);
+    color: white;
+}
