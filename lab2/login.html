@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login form</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            background-color:aquamarine;
+            height: 150px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+        }
+        main {
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        h2 {
+            padding-left: 90px;
+        }
+        form {
+            margin-top: 20px;
+            padding: 10px;
+            width: 350px;
+            border: 1px solid grey;
+            box-shadow: 5px 5px 5px grey;
+        }
+        input {
+            width: 320px;
+            height: 32px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        #login {
+            margin-top: 10px;
+            color: white;
+            background-color:blueviolet;
+            outline: none;
+            height: 50px;
+            width: 80px;
+            font-size: 1rem;
+        }
+        a {
+            margin-left: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>IP2 lab2 Excersie</h1>
+        </header>
+        <main>
+            <form action="./login.php" method="post">
+                <h2>LOGIN</h2>
+                <label for="username">username<br/></label>
+                <input type="text" name="username"><br>
+                <label for="password">password<br/></label>
+                <input type="password" name="password"><br>
+                <input type="submit" value="login" id="login">
+                <a href="#register">register</a>
+
+            </form>
+        </main>
+    </div>
+    
+</body>
+</html>

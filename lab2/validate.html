@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: aquamarine;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form {
+            margin-top: 20px;
+            padding: 10px;
+            width: 350px;
+            border: 1px solid grey;
+            box-shadow: 5px 5px 5px grey;
+        }
+
+        input {
+            /* width: 320px;
+            height: 32px; */
+            outline:none;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>IP2 lab2 Excersie</h1>
+        </header>
+        <main>
+            <form method="post" action="validate.php">
+                USERID : <input type="text" name="userid" id="" required>
+                <br><br>
+                Password: <input type="password" name="password" required>
+                <br><br>
+                Name: <input type="text" name="name" required>
+                <br><br>
+                address: <input type="text" name="address">
+                <br>
+                E-mail: <input type="text" name="email">
+                <br><br>
+                Website: <input type="text" name="website">
+                <br><br>
+                country: <input type="">
+                <br><br>
+                <label for="">Gender: Female <input type="radio" name="gender" value="female">
+                       Male <input type="radio" name="gender" value="male">
+                </label>
+                <br><br>
+                 <label for="">language:  <input type="checkbox" name="english" id="">english
+                    <input type="checkbox" name="nonenglish" id="">non English
+                </label>
+                About: <textarea name="comment" rows="5" cols="40"></textarea>
+                <input type="submit" name="submit" value="Submit">
+            </form>
+        </main>
+    </div>
+
+</body>
+
+</html>
